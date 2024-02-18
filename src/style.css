@@ -1,1 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.greenBackground {
+  background-color: green;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.suit {
+  font-size: 3em;
+  text-align: center;
+}
+
+.suit.reds {
+  color: red;
+}
+
+.suit.blacks {
+  color: black;
+}
+
+#num {
+  font-size: 4em;
+  font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#topSuit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#bottomSuit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
